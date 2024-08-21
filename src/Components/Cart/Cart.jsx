@@ -3,12 +3,9 @@
 import React from 'react';
 import './Cart.css'
 
-function Cart({cart}) {
+const Cart =({cart})=> {
 
-// function Cart(props) {
-    // const cart = props.cart; //option 1
-    // const{cart} =props;// option 2 
-    console.log(cart);
+
 
     let total = 0;
     let totalShipping = 0;
@@ -18,7 +15,6 @@ function Cart({cart}) {
             product.quantity=1;
         }
 
-        // product.quantity = product.quantity||1;
 
 
         total = total + product.price * product.quantity;
