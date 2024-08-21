@@ -6,3 +6,16 @@
     border-radius: 15px;
    
 }
+.btn-clear-cart{
+    width: 90%;
+    height: 40px;
+    gap: 15px;
+    font-size: 18px;
+    margin: 10px auto;
+    background: #FF3030;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}

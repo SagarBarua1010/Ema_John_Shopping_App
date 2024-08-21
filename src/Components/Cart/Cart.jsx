@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import './Cart.css'
+import './Cart.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
-const Cart =({cart})=> {
+const Cart =({cart,handleClearCart})=> {
 
 
 
@@ -32,6 +34,10 @@ const Cart =({cart})=> {
             <p>Shipping Price:$ {totalShipping} </p>
             <p>Tax:$ {tax.toFixed(2)}</p>
             <h6>Grand Total:$ {grandTotal.toFixed(2)}</h6>
+            <button onClick={handleClearCart} className='btn-clear-cart'>
+                <samp>Clear Cart</samp>
+                <FontAwesomeIcon icon=  { faTrashAlt} /> 
+            </button>
         </div>
     );
 }
