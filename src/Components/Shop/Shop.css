@@ -7,3 +7,20 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+.btn-proceed{
+    background: #FF9900;
+    width: 90%;
+    height: 40px;
+    gap: 15px;
+    font-size: 18px;
+    margin: 10px auto;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+.proceed-link{
+    text-decoration: none;
+}
