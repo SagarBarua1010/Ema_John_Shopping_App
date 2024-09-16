@@ -1,9 +1,5 @@
 import React from 'react'
 import * as ReactDOM from "react-dom/client"
-
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Shop from './Components/Shop/Shop.jsx'
@@ -13,6 +9,7 @@ import Inventory from './Components/Inventory/Inventory.jsx'
 import Login from './Components/Login/Login.jsx'
 import cartProductsLoader from './CartProductsLoader/CartProductsLoader.js'
 import Checkout from './Components/Checkout/Checkout.jsx'
+import SignUp from './Components/SignUp/SignUp.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +30,9 @@ const router = createBrowserRouter([
       },
       {
         path:'login',element:<Login></Login>
+      },
+      {
+        path: '/signup',element:<SignUp></SignUp>
       }
     ]
   }
