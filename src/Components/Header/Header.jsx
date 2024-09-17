@@ -19,11 +19,11 @@ const Header = () => {
             <img src={logo} alt="" />
             <div>
             <Link to="/">Shop</Link>
-            <Link to="orders">Order</Link>
-            <Link to="inventory">Inventory</Link>
-            <Link to="login">Login</Link>
+            <Link to="/orders">Order</Link>
+            <Link to="/inventory">Inventory</Link>
+            <Link to="/login">Login</Link>
             <Link to="/signup">Sign Up</Link>
-            {user && <span>Welcome {user.email} <button onClick={handleLogout}>Sing out</button> </span>}
+            {user && <span className='text-white'>Welcome {user.email} <button onClick={handleLogout}>log out</button> </span>}
             </div>
         </nav>
     );
